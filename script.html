@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="http://cdn.peerjs.com/0.3/peer.js"></script>
+        <script src="http://knockoutjs.com/downloads/knockout-3.2.0.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.js"></script>
+        <script src="q.js"></script>
+        <script src="OTCounter.js"></script>
+        <script src="Client.js"></script>
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th>client id</th>
+                    <th>value</th>
+                </tr>
+            </thead>
+            <tbody data-bind="foreach: clients">
+                <tr>
+                    <td data-bind="text: id"></td>
+                    <td data-bind="text: counter"></td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
